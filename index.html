@@ -7,7 +7,26 @@
   <title>Industrial Equipment Balancing | Field Balancing</title>
   <style>
     body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-    header, footer { background: #1a3a5b; color: #fff; padding: 1em; text-align: center; }
+    header {
+      background: #1a3a5b url('imgs/dz_balancing.png') center/cover no-repeat;
+      color: #fff;
+      padding: 4em 1em 2em 1em;
+      text-align: center;
+      position: relative;
+    }
+    header::after {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0; top: 0; right: 0; bottom: 0;
+      background: rgba(26,58,91,0.6);
+      z-index: 1;
+    }
+    header > * {
+      position: relative;
+      z-index: 2;
+    }
+    footer { background: #1a3a5b; color: #fff; padding: 1em; text-align: center; }
     main { padding: 2em; max-width: 800px; margin: auto; }
     h1, h2 { color: #1a3a5b; }
     ul { margin-left: 1.5em; }
