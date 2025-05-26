@@ -19,12 +19,14 @@
       display: block;
       position: absolute;
       left: 0; top: 0; right: 0; bottom: 0;
-      background: rgba(26,58,91,0.6);
+      background: rgba(26,58,91,0.85); /* увеличено затемнение */
       z-index: 1;
     }
     header > * {
       position: relative;
       z-index: 2;
+      color: #fff; /* явно белый цвет текста */
+      text-shadow: 0 2px 8px #000; /* добавлена тень для читаемости */
     }
     footer { background: #1a3a5b; color: #fff; padding: 1em; text-align: center; }
     main { padding: 2em; max-width: 800px; margin: auto; }
@@ -62,9 +64,24 @@
     </section>
     <section class="gallery">
       <h2>Equipment Examples</h2>
-      <!-- Add images here -->
-      <!-- <img src="fan.jpg" alt="Fan"> -->
-      <!-- <img src="crusher.jpg" alt="Crusher"> -->
+      <div style="display: flex; flex-wrap: wrap; gap: 1em; justify-content: center;">
+        <figure>
+          <img src="imgs/fan1.jpg" alt="Industrial Fan 1">
+          <figcaption>Industrial Fan #1</figcaption>
+        </figure>
+        <figure>
+          <img src="imgs/fan2.jpg" alt="Industrial Fan 2">
+          <figcaption>Industrial Fan #2</figcaption>
+        </figure>
+        <figure>
+          <img src="imgs/hummer_mill.png" alt="Hammer Mill 1">
+          <figcaption>Hammer Mill #1</figcaption>
+        </figure>
+        <figure>
+          <img src="imgs/hummer_mill2.jpeg" alt="Hammer Mill 2">
+          <figcaption>Hammer Mill #2</figcaption>
+        </figure>
+      </div>
     </section>
     <section>
       <h2>Service Area</h2>
